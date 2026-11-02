@@ -1,0 +1,139 @@
+
+/* Footer Main */
+.footer {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 50px 6% 20px;
+    margin-top: 50px;
+    border-top: 2px solid #212022;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer Boxes */
+.footer-box {
+    flex: 1;
+    min-width: 160px;
+}
+
+/* Logo */
+.footer-logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #141315;
+    margin-bottom: 15px;
+}
+
+/* Headings */
+.footer-box h3 {
+    font-size: 19px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.footer-box p {
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Footer Links */
+.footer-box a {
+    display: block;
+    width: fit-content;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+/* Link Hover */
+.footer-box a:hover {
+    color: #7545D6;
+    transform: translateX(5px);
+}
+
+/* Login and Signup Buttons */
+.footer-box .footer-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #5426A8, #7545D6);
+    color: #FFFFFF;
+    padding: 9px 22px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.footer-box .footer-btn:hover {
+    background: linear-gradient(90deg, #7545D6, #9B6DFF);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(117, 69, 214, 0.35);
+    color: #FFFFFF;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #DDDDDD;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #000000;
+    font-size: 13px;
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 40px 5% 20px;
+    }
+
+    .footer-container {
+        gap: 30px;
+    }
+
+    .footer-box {
+        flex: 1 1 40%;
+    }
+
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+
+    .footer-logo {
+        font-size: 24px;
+    }
+
+}
