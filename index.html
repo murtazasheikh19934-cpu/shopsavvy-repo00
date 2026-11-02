@@ -10,12 +10,11 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <img src="./savvi-black.png.png" alt="shopsavvy-logo">
         <a href="">Home</a>
         <a href="#featured-products">Shop</a>
         <a href="#categories"">Categories</a>
-        <a href="">About</a>
         <input type="text" id="search-input" placeholder="Search for product...">
         <div class="navbar-icon">
             <a href="./login.html">
@@ -28,7 +27,49 @@
             </div>
             </a>
         </div>
-    </nav>
+    </nav> -->
+<nav class="navbar">
+
+    <div class="navbar-top">
+        <img src="./savvi-black.png.png" alt="shopsavvy-logo">
+
+        <button class="menu-toggle" id="menu-toggle">
+            ☰
+        </button>
+    </div>
+
+    <input type="text" id="search-input" placeholder="Search for product...">
+
+    <div class="nav-sidebar" id="nav-sidebar">
+
+        <button class="close-menu" id="close-menu">&times;</button>
+
+        <a href="">Home</a>
+        <a href="#featured-products">Shop</a>
+        <a href="#categories">Categories</a>
+
+        <div class="navbar-icon">
+            <a href="./login.html">
+                <img src="./account-profile-essential-svgrepo-com.svg" alt="acc-logo">
+            </a>
+
+            <a href="./cart.html">
+                <div class="cart-btn">
+                    <img src="./cart-svgrepo-com.svg" alt="cart-icon">
+                    <span id="cart-count">0</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+
+
+
+
     <div class="banner">
         <h4 class="sm-heading">YOUR STYLE, OUR PRIORITY</h4>
         <h1 class="banner-heading">Shop Smarter.</h1>

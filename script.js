@@ -263,5 +263,32 @@ if (searchInput) {
 }
 
 
+let menuToggle = document.querySelector("#menu-toggle");
+let closeMenu = document.querySelector("#close-menu");
+let navSidebar = document.querySelector("#nav-sidebar");
+let sidebarOverlay = document.querySelector("#sidebar-overlay");
 
+menuToggle.addEventListener("click", function() {
+    navSidebar.classList.add("active");
+    sidebarOverlay.classList.add("active");
+});
+
+closeMenu.addEventListener("click", function() {
+    navSidebar.classList.remove("active");
+    sidebarOverlay.classList.remove("active");
+});
+
+sidebarOverlay.addEventListener("click", function() {
+    navSidebar.classList.remove("active");
+    sidebarOverlay.classList.remove("active");
+});
+
+let navLinks = navSidebar.querySelectorAll("a");
+
+navLinks.forEach(function(link) {
+    link.addEventListener("click", function() {
+        navSidebar.classList.remove("active");
+        sidebarOverlay.classList.remove("active");
+    });
+});
 
